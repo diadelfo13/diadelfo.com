@@ -816,7 +816,9 @@
             throw new Error(json.message || 'Submission failed');
           }
         } catch (err) {
-          status.textContent = '✗ Something broke. Email diadelfo13@gmail.com directly.';
+          // Email is base64-encoded so bot scrapers can't harvest it from raw HTML.
+          const e = atob('ZGlhZGVsZm8xM0BnbWFpbC5jb20=');
+          status.innerHTML = '✗ Something broke. Email <a href="mailto:' + e + '" style="text-decoration:underline">' + e + '</a> directly.';
           status.className = 'block font-mono text-sm pt-2 text-accent';
           btn.disabled = false;
           label.textContent = 'Send it';
