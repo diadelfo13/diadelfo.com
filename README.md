@@ -1,4 +1,4 @@
-# matteodiadelfo.com
+# diadelfo.com
 
 Personal landing page for Matteo Diadelfo — operator who builds with AI.
 
