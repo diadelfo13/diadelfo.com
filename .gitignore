@@ -1,0 +1,14 @@
+# Dev artifacts
+.playwright-cli/
+.claude/
+.DS_Store
+
+# Screenshots and references (dev-only)
+*.png
+*.jpg
+*.jpeg
+
+# Local previews / drafts
+palette-preview.html
+v2-*.html
+v3-*.html
